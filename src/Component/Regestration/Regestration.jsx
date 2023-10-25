@@ -51,7 +51,7 @@ console.log(valid);
       console.log(data );
 
 
-   if (data.message === "success"){
+   if (data.message === "done"){
      navigate('/login')
      setloding(false)
 
@@ -73,17 +73,17 @@ console.log(valid);
       } )
       // FirstNAme VAlid 
       valid.error.details.forEach( (el)=>{
-        if(el.path[0]==="first_name"){
+        if(el.path[0]==="name"){
           setFnErr(el.message)
         }
       })
   // LastNAme VAlid 
-  valid.error.details.forEach((el)=>{
-   if( el.path[0]=== "last_name"){
-    setLnErr(el.message)
+  // valid.error.details.forEach((el)=>{
+  //  if( el.path[0]=== "last_name"){
+  //   setLnErr(el.message)
   
-   }
-  })
+  //  }
+  // })
   // Age valid 
   valid.error.details.forEach((el)=>{
   

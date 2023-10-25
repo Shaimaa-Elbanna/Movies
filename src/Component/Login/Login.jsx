@@ -39,10 +39,10 @@ export default function Login({loginToken}) {
       let { data } = await axios.post(`https://e-commerce-jh7h.onrender.com/auth/login`, user)
 
 
-      if (data.message === "success") {
+      if (data.message === "Done") {
         navigate('/home')
         setloding(false)
-        localStorage.setItem("token", data.token)
+        localStorage.setItem("token",JSON.stringify (data.refresh_token))
         loginToken()
 
       }
