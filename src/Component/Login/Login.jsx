@@ -36,7 +36,7 @@ export default function Login({loginToken}) {
 
 
 
-      let { data } = await axios.post(`https://sticky-note-fe.vercel.app/signin`, user)
+      let { data } = await axios.post(`https://e-commerce-jh7h.onrender.com/auth/login`, user)
 
 
       if (data.message === "success") {

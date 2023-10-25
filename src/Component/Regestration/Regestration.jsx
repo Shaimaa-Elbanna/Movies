@@ -8,11 +8,11 @@ import Joi from 'joi'
 export default function Regestration() {
  
   let[user,setuserApi]=useState({
-    first_name:"",
-    last_name:"",
+   name:"",
+    
      email:"",
      password:"",
-    age:""
+    DOB:""
     
   })
 let navigate = useNavigate()
@@ -47,7 +47,7 @@ console.log(valid);
 
 
 
-      let {data} = await axios.post ("https://sticky-note-fe.vercel.app/signup",user)
+      let {data} = await axios.post ("https://e-commerce-jh7h.onrender.com/auth/signup",user)
       console.log(data );
 
 
@@ -112,10 +112,9 @@ console.log(valid);
 
 function validation(){
   let scheme = Joi.object({
-    first_name: Joi.string().required().min(3).max(10).alphanum(),
-    last_name:Joi.string().required().min(3).max(10).alphanum(),
+   name: Joi.string().required().min(3).max(10).alphanum(),
     email: Joi.string().required().email({tlds:{allow:['com','net']}}),
-    age: Joi.number().required().min(18).max(50),
+    DOB: Joi.number().required().min(18).max(50),
     password:Joi.string().required().pattern(new RegExp ('^[A-Z][a-z]{2,10}[0-9]?$'))
 
   })
@@ -133,16 +132,16 @@ function validation(){
 <form className='my-4 shadow col-8 m-auto' onSubmit={sbumitUserData}>
 
 <div className='my-2'>
-  <label htmlFor="first_name">Enter your first name</label>
-  <input type="text"onChange={userData}  id='first_name' name='first_name' className='form-control bg-transparent text-white mt-2'/>
+  <label htmlFor="name">Enter your first name</label>
+  <input type="text"onChange={userData}  id='name' name='name' className='form-control bg-transparent text-white mt-2'/>
 {FnErr?<div className='alert alert-info mt-2 p-1'>{FnErr}</div>: ""}
 </div>
-<div className='my-2'>
+{/* <div className='my-2'>
   <label htmlFor="last_name"> Enter your last name</label>
   <input type="text" onChange={userData} id='last_name' name='last_name' className='form-control bg-transparent text-white mt-2'/>
   {LnErr?<div className='alert alert-info mt-2 p-1'>{LnErr}</div>: ""}
 
-</div>
+</div> */}
 <div className='my-2'>
   <label htmlFor="email"> Enter your email</label>
   <input type="text" onChange={userData} id='email' name='email' className='form-control bg-transparent text-white mt-2'/>
@@ -181,7 +180,7 @@ function validation(){
 {apiErr===""? "" : <div className='alert alert-primary my-2' > {apiErr}</div>}
 
 <div className='my-2'>
-  <label htmlFor="first_name">Enter your first name</label>
+  <label htmlFor="name">Enter your first name</label>
   <input type="text"onChange={userData}  id='first_name' name='first_name' className='form-control bg-transparent text-white mt-2'/>
   <div className='alert alert-info my-2'>{submitErr[0].message>0}</div>
 
