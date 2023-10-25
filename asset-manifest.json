@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shaimaa-Elbanna/Movies/static/css/main.add222e1.css",
-    "main.js": "/Shaimaa-Elbanna/Movies/static/js/main.b0153547.js",
+    "main.js": "/Shaimaa-Elbanna/Movies/static/js/main.f699e657.js",
     "static/js/787.3e0d9fe1.chunk.js": "/Shaimaa-Elbanna/Movies/static/js/787.3e0d9fe1.chunk.js",
     "static/media/fa-solid-900.ttf": "/Shaimaa-Elbanna/Movies/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/fa-brands-400.ttf": "/Shaimaa-Elbanna/Movies/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
@@ -14,11 +14,11 @@
     "static/media/fa-v4compatibility.woff2": "/Shaimaa-Elbanna/Movies/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/Shaimaa-Elbanna/Movies/index.html",
     "main.add222e1.css.map": "/Shaimaa-Elbanna/Movies/static/css/main.add222e1.css.map",
-    "main.b0153547.js.map": "/Shaimaa-Elbanna/Movies/static/js/main.b0153547.js.map",
+    "main.f699e657.js.map": "/Shaimaa-Elbanna/Movies/static/js/main.f699e657.js.map",
     "787.3e0d9fe1.chunk.js.map": "/Shaimaa-Elbanna/Movies/static/js/787.3e0d9fe1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.add222e1.css",
-    "static/js/main.b0153547.js"
+    "static/js/main.f699e657.js"
   ]
 }
